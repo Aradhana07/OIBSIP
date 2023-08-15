@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>personal portfolio</title>
+	<meta charset="UTF-8">
+	 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="style.css"/>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<style type="text/css">
+		*{
+	padding: 0px;
+	margin: 0;
+	box-sizing: border-box;
+}
+header{
+	width: 100%;
+	height: 100vh;
+	background-color: ghostwhite;
+	background-size: auto;
+	font-family: sans-serif;
+	background-repeat:no-repeat ;
+	background: url("bg2.jpg");
+	}
+
+nav {
+	width: 100%;
+	height: 110px;
+	background-color: lavender;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+.text {
+	font-size: 2em;
+	font-family: sans-serif;
+	font-weight: 800;
+	top: 10%;
+}
+.menu a {
+	color:blueviolet ;
+	font-size: 18px;
+	margin: 10px;
+	padding: 10px 10px;
+	text-decoration:none ;
+	position: relative;
+}
+.menu a:before {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 0%;
+	height: 100%;
+	border-bottom:2px solid blueviolet;
+	transition: 0.4s linear;
+}
+   .menu a:hover:before{
+	width: 90%;
+}
+.section {
+	float: right;
+}
+
+ img {
+	border-radius: 50%;
+	margin: 40px;
+}
+.h-txt {
+		max-width: 800px;
+		position: absolute;
+		top: 50%;
+		left: 30%;
+		transform: translate(-50%,-50%);
+		color: black;
+		font-size: 1.5em;
+		padding-top: 150px;
+	}
+	.h-txt p {
+		left: 30%;
+	}
+	
+	.button a {
+		text-decoration: none;
+		color: white;
+		padding: 10px 20px;
+		font-size: 15px;
+		background-color: blueviolet;
+		border-radius: 20px;
+		border: 1px solid black;
+		transition: 0.4s;
+		background: linear-gradient(blueviolet, powderblue);
+		letter-spacing: 1px;
+	}
+	.button a:hover{
+			background: transparent;
+			border: 2px solid blueviolet;
+			color: black;
+			background-color:lavender;
+}
+#boxes {
+	width: 100%;
+	height: 450px;
+	background-color: lavender;
+	padding-top: 20px;
+	padding-left: 15px;
+	padding-right: 15px;
+	border: 1px solid violet;
+
+
+}
+#leftbox {
+	float: left;
+	width: 30%;
+	height: 250px;
+	background-color: lavender;
+}
+
+#middlebox {
+	float:right;
+	width: 35%;
+	height: 160px;
+	background-color: lavender;
+	text-align: center;
+	border: 1px solid violet;
+	border-radius: 20px;
+}
+#rightbox {
+	float: right;
+	width: 35%;
+	height: 160px;
+	background-color: lavender;
+	text-align: center;
+	border: 1px solid violet;
+	border-radius: 20px;
+}
+#boxes h1,p {
+	color: black;
+	text-align: center;
+}
+#downbox {
+	float: right;
+	width: 70%;
+	height: 100px;
+	background-color: lavender;
+	}
+
+.footercontainer {
+			width: 40%;
+}
+.socialicon {
+			display: flex;
+			justify-content: center;
+		}
+		.socialicon a {
+			text-decoration: none;
+			background-color: white;
+			border-radius: 60%;
+			margin: 10px;
+		}
+		.socialicon a i {
+			font-size: 1.5em;
+			color: black;
+			opacity: 0.9;
+		}
+		.socialicon a:hover {
+			background-color: #111;
+			transition: 0.5s;
+		}
+		.socialicon a i:hover{
+			background-color: white;
+			transition: 0.5s;
+		}
+		.footer{
+			text-align: center;
+			width: 100%;
+			height: 200px;
+			margin: auto;
+			background-color: lavender;
+			padding-top: 50px;
+			
+		}
+		.socialicon {
+			text-align: center;
+			padding-bottom: 80px;
+		}
+
+	</style>
+</head>
+<body>
+	<header>
+		<nav>
+			<div class="logo">
+				<span class="text">Port<span style="color: blueviolet;">folio</span></span>
+			</div>
+			<div class="menu">
+				<a href="#">Home</a>
+				<a href="#">About Me</a>
+				<a href="#">Education</a>
+				<a href="#">My Skills</a>
+				<a href="#">Portfolio</a>
+				<a href="#">Testimonial</a>
+			</div>
+			<div class="button">
+		      <a href="#"> Subsribe Us</a>
+	        </div>
+		</nav>
+		<hr>
+
+<section class="bd">
+	<div class="h-txt">
+		<h1>I'm Emily <span style="color: blueviolet;">Jones</span></h1>
+		<h1>I Am Into Front End Deve<span style="color: blueviolet;">loper</span> </h1>
+		<br>
+		<br>
+		<div class="button">
+		   <a href="#"> Download CV </a>
+        </div> 
+        <br><br>
+        <div class="footercontainer">
+	  <div class="socialicon">
+		<a href=""> <i class="fa-brands fa-facebook"></i></a>
+		<a href=""> <i class="fa-brands fa-twitter"></i></a>
+		<a href=""> <i class="fa-brands fa-google-plus"></i></a>
+		<a href=""> <i class="fa-brands fa-youtube"></i></a>
+      </div>
+    </div>
+    </div>
+		<div class="section">
+			<img src="white-background-og-image.png" height="300px">
+		</div>
+</section>
+</header>
+
+<div id="boxes">
+	<p>Get To Know More</p>
+	<h1 style="text-decoration-line: underline;">About Me</h1>
+	<br><br>
+
+    <div id="leftbox">
+      <img src="girl.jpeg">
+   </div>
+
+   <div id="middlebox">
+     <h1>Experiance</h1>
+     <p>Fresher</p>
+     <p> Frontend Development</p>
+  </div>
+
+  <div id="rightbox">
+      <h1>Education</h1>
+      <p>B.Tech(CS)</p>
+      <p> Bachelors Degree</p>
+  </div>
+  <div id="downbox">
+  	<p style="text-align: left;">Web developers build websites and ensure they perform reliably and efficiently. Learn more about this critical role in the tech industry and how to get started.Web developers usually fall under one of three categories: back-end developers, front-end developers, and full-stack developers. Some web developers also work as webmasters. Let’s take a closer look at each of these roles.Front-end web developers work on the visual part of the website—the pages visitors see and interact with (also known as the user interface). They design the physical layout of each page, integrate graphics, and use HTML and JavaScript to enhance the site.</p>
+  </div>
+</div>
+
+
+<footer style="background-color: lavender;">
+	<h1 style="text-align:center;padding-top: 0px;">Thank <span style="color:blueviolet;" >You </span>To Visit My Port<span style="color:blueviolet;" >folio</span></h1>
+	<div class="footer">
+		<p style="text-decoration-line: underline;background:repeating-radial-gradient(blueviolet,powderblue);"><b> Get In Touch With Us Today !
+		</b></p>
+		<h1  style="background:repeating-radial-gradient(blueviolet,powderblue);">Contact Me</h1><br>
+	</div>
+	<div class="footerbox">
+	  <div class="socialicon" >
+		<a href=""> <i class="fa-brands fa-facebook"></i></a>
+		<a href=""> <i class="fa-brands fa-instagram"></i></a>
+		<a href=""> <i class="fa-brands fa-twitter"></i></a>
+		<a href=""> <i class="fa-brands fa-google-plus"></i></a>
+		<a href=""> <i class="fa-brands fa-youtube"></i></a>
+      </div>
+    </div>
+</footer>
+
+
+
+	
+</body>
+</html>
